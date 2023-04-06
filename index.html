@@ -5,69 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Site 2</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="style" href="style.css">
-</head>
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Resto</title>
 <body>
-    <header>
-        <div class="principale">
-            <div class="logo">
-                <a href="#"><span>T</span>rico_o<span>T</span></a>
+<header>
+    <a href="#" class="logo"><span>T</span>rico_o<span>T</span></a>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <ul class="navbar">
+        <li><a href="#banniere" onclick="toggleMenu();">Accueil</a></li>
+        <li><a href="#aproposdemoi" onclick="toggleMenu();">A propos de moi</a></li>
+        <li><a href="#mesprojets" onclick="toggleMenu();">Mes projets</a></li>
+        <li><a href="#mesprojetsfuturs" onclick="toggleMenu();">Projets Futurs</a></li>
+    </ul>
+</header>
+<section class="banniere" id="banniere">
+</section>
+<section class="aproposdemoi" id="aproposdemoi">
+    <div class="row">
+        <div class="col50">
+            <div class="img">
+                <img src="./image/2.png" alt="image">
             </div>
-            <ul>
-                <li class="active">
-                    <a href="#">Accueil</a>
-                </li>
-                <li>
-                    <a href="#">Projets</a>
-                </li>
-                <li>
-                    <a href="#">ProjetsS Futures</a>
-                </li>
-                <li>
-                    <a href="#">A propos de moi</a>
-                </li>
-            </ul>
         </div>
-        <div class="titre">
-            <h1>PORTSFOLIO</h1>
+    </div>
+</section>
+<section class="menu" id="menu">
+<section class="mesprojets" id="mesprojets"> 
+    <div class="row">
+        <div class="col50">
+            <div class="img">
+                <img src="./image/3.png" alt="image">
+            </div>
         </div>
-        <body1> 
-            <div class="reseau">
-            <div class="buttonR">
-                <div class="s-icon">
-                    <a href="" > 
-                        <i class="fa-brands fa-facebook"></i> 
-                    </a>
-                </div>
-                <a href="" > 
-                    <span>Facebook</span> 
-                </a>     
+    </div>
+ </section>
+ <section class="mesprojetsfuturs" id="mesprojetsfuturs"> 
+    <div class="row">
+        <div class="col50">
+            <div class="img">
+                <img src="./image/4.png" alt="image">
             </div>
-            <div class="buttonR">
-                <div class="s-icon">
-                    <a href="https://www.instagram.com/stephzgt2.0/?next=%2F&hl=fr" > 
-                        <i class="fa-brands fa-instagram"></i> 
-                    </a>
-                </div>
-                <a href="" > 
-                    <span>Instagram</span> 
-                </a>     
-            </div>
-            <div class="buttonR">
-                <div class="s-icon">
-                    <a href="https://discord.com/channels/@me" > 
-                        <i class="fa-brands fa-discord"></i> 
-                    </a>
-                </div>
-                <a href="" > 
-                    <span>Discord</span> 
-                </a>     
-            </div>
-        </div></body1>
-       
-    </header>
-</body>
+        </div>
+    </div>
+ </section>
 
+ 
+ 
+ <script type="text/javascript">
+     window.addEventListener('scroll', function(){
+         const header =document.querySelector('header');
+         header.classList.toggle("sticky", window.scrollY > 0 );
+     });
+
+     
+ </script>
+</body>
 </html>
