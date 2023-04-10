@@ -28,12 +28,12 @@ body {
         border-radius: 10%;
     }
     #avatar {
-        max-height: 200px;
+        max-height: 350px;
        
     }
     #content {
         background-color: white;
-        padding-top: 48px;
+        padding-top: 50px;
         padding-bottom: 48px;
         padding-left: 5%;
         padding-right: 5%;
