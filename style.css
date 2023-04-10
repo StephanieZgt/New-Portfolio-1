@@ -1,0 +1,40 @@
+body {
+    /* background-color: #42AAF7; */
+    background-image: url("./assets/background.png");
+    background-repeat: repeat;
+    background-size: 500px;
+}
+
+#page {
+    margin-top: 5%;
+
+}
+#header {
+    background-color: #F6C61F;
+    padding: 15%;
+}
+#avatar {
+    max-height: 300px;
+    padding-right: 60%;
+}
+  
+    #page {
+        margin-top: 5%;
+    
+    }
+    #header {
+        background-color: #F6C61F;
+        padding: 15%;
+    }
+    #avatar {
+        max-height: 200px;
+       
+    }
+    #content {
+        background-color: white;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        padding-left: 5%;
+        padding-right: 5%;
+        }
+    
